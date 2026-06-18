@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        <label >User ID</label><br/>
+        <!-- Textbox for ID ,placeholder: Enter User ID-->
+        <input type="textbox" placeholder="Enter User ID" required><br/>
+        <!-- Label: Password -->
+        <label>Password</label><br/>
+        <!-- Textbox for Password ,placeholder: Enter Password-->
+        <input type="textbox" placeholder="Enter Password" required minlength="6"><br/>
+        <!-- Forgot password link with ? -->
+        <a href="forgotpassword.html">Forgot password?</a><br/>
+        <!-- Login button -->
+        <button id="loginbtn" >Login</button>
+    </form>
+    <script>
+    
+        {/*Redirect to dashboard*/}
+        document.getElementById("loginbtn").addEventListener("click",()=>{
+            try{
+                window.location.href="TestPage.html"
+            }catch(err){
+                console.log("eroor",err);
+            }
+        })
+
+    
+</script>
+</body>
+</html>
